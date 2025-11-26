@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorized Blinds and Shades Made Easy</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .brand { color:#0ea5e9; }
+    .brand-bg { background:#0ea5e9; }
+    .brand-bg-dark { background:#0369a1; }
+  </style>
+  <meta name="description" content="Ananda. Dive N' Flow — small‑group scuba diving, freediving, snorkeling, whale‑watching and private boat tours in Santa Teresa & Malpaís, Costa Rica. Safety‑first, personalized vibes." />
+  <meta name="keywords" content="Scuba Diving, Freediving, Snorkeling, Whale-watching, Santa Teresa, Malpaís, Costa Rica diving, boat tours" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ananda. Dive N' Flow — Ocean Adventures in Santa Teresa" />
+  <meta property="og:description" content="Small groups, pro instruction, and a friendly, relaxed vibe. Scuba, freediving, snorkeling & private boat tours." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ananda.cr/" />
+  <meta property="og:image" content="https://ananda.cr/favicon-32x32.png" />
+  <link rel="icon" href="https://ananda.cr/favicon-32x32.png"/>
+  <style>
+    /* Simple fade-in */
+    .animate-fade { animation: fade 0.8s ease-out both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px);} to { opacity:1; transform: translateY(0);} }
+  </style>
+  
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Ananda. Dive N' Flow",
+    "image": "https://ananda.cr/favicon-32x32.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "CC Pochote, local #4",
+      "addressLocality": "Santa Teresa",
+      "addressRegion": "Puntarenas",
+      "postalCode": "60111",
+      "addressCountry": "CR"
+    },
+    "telephone": "+5067711994",
+    "email": "info@ananda.cr",
+    "url": "https://ananda.cr/",
+    "openingHours": "Mo-Su 09:00-16:00",
+    "sameAs": [
+      "https://www.instagram.com/ananda.dnf/",
+      "https://www.facebook.com/anandadivenflow/"
+    ],
+    "description": "Diving and ocean adventure center offering scuba diving, freediving, snorkeling, whale-watching, and private boat tours with a focus on small groups, personalized experiences, and safety."
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur shadow-sm fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+      <span class="font-extrabold tracking-tight text-slate-900 text-xl">Crestron & Lutron <span class="brand">Home Automation And Shades</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-semibold">
+        <a href="#about" class="hover:text-sky-600">About</a>
+        <a href="#activities" class="hover:text-sky-600">Our Services</a>
+        <a href="#why" class="hover:text-sky-600">Why Us</a>
+        <a href="#faq" class="hover:text-sky-600">FAQ</a>
+        <a href="#contact" class="hover:text-sky-600">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:+1 754-209-1354" class="brand-bg text-white font-bold py-2 px-4 rounded-full hover:brand-bg-dark transition">Call +1 754-209-1354</a>
+      </div>
+      <button class="md:hidden" id="menuBtn" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-slate-700"><path d="M3.75 5.25h16.5v1.5H3.75v-1.5Zm0 6h16.5v1.5H3.75v-1.5Zm0 6h16.5v1.5H3.75v-1.5Z"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
+      <nav class="px-4 py-3 grid gap-3 bg-white">
+        <a href="#about" class="py-2">About</a>
+        <a href="#activities" class="py-2">Our Services</a>
+        <a href="#why" class="py-2">Why Us</a>
+        <a href="#faq" class="py-2">FAQ</a>
+        <a href="#contact" class="py-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="pt-24 md:pt-28">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-sky-900 via-sky-700 to-cyan-600"></div>
+      <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 10%, rgba(255,255,255,.3) 0 20%, transparent 21%), radial-gradient(circle at 80% 60%, rgba(255,255,255,.25) 0 18%, transparent 19%);"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center text-white">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight animate-fade">Motorized Blinds and Shades Made Easy</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto opacity-95">Experience effortless control with motorized blinds and shades. Perfect for hard-to-reach windows, smart homes, and energy efficiency.</p>
+        <div class="mt-8 flex items-center justify-center gap-4">
+          <a href="https://omwavehome.com/contact-us/" class="bg-white text-sky-700 font-bold py-3 px-6 rounded-full hover:bg-slate-100 transition">Contact us</a>
+        </div>
+        <div class="mt-6 text-sm opacity-90">Hours: Monday to Saturday 8:00am–8:00pm Sunday-Closed</div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 brand">About Us</h2>
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="space-y-4 text-lg text-slate-600">
+            <p>At Crestron & Lutron Home Automation And Shades, we specialize in providing high-quality <a href="https://omwavehome.com/" class="text-sky-600 hover:underline"><b>motorized blinds and shades</b></a> that bring convenience, style, and smart home technology to your home. Located at 14141 Luray Rd, Southwest Ranches, FL 33330, our team is committed to delivering custom solutions for every window, ensuring seamless integration with your home automation system. Call us at 754-209-1354 or visit omwavehome.com to explore our full range of products.</p>
+            
+             <p>As a trusted Crestron dealer and Lutron shades installer, we offer professional installation of <a href="https://omwavehome.com/" class="text-sky-600 hover:underline"><b>motorized blinds and shades</b></a> that enhance comfort, privacy, and energy efficiency. Our custom window treatments are designed to fit your home perfectly, combining functionality with elegance. Whether you’re upgrading existing windows or installing new automated shades, our expert team ensures precise measurements and flawless installation.</p>
+             
+              <p>Our mission is to make every home smarter, more convenient, and energy-efficient through <a href="https://www.google.com/maps?cid=1397293120222179388" class="text-sky-600 hover:underline"><b>top-quality motorized blinds and shades</b></a>. From automated control to stylish design, we help homeowners in Southwest Ranches and beyond enjoy effortless light control and modern living. Trust <a href="https://www.google.com/maps?cid=1397293120222179388" class="text-sky-600 hover:underline"><b>Crestron & Lutron Home Automation And Shades</b></a>
+ for the best in motorized blinds and shades and complete smart home integration.</p>
+              
+              
+          </div>
+          <div class="relative">
+            <div class="absolute -inset-2 rounded-2xl bg-sky-100 -z-10"></div>
+            <img src="https://img.freepik.com/free-photo/portrait-dreamy-blonde-girl-with-bright-pink-lips-nude-makeup-listening-music-smartphone-with-striped-wooden-balks_197531-61.jpg?t=st=1764140519~exp=1764144119~hmac=3627a2d88a51b52f65d5805e76d8e48bfe67d161d10f82c870d247248b1bdbb2"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities / Services -->
+    <section id="activities" class="py-16 md:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 brand">Our Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card -->
+          <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition text-center">
+            <h3 class="text-xl font-bold mb-2">Smart Lighting Installation
+
+</h3>
+            <p class="text-slate-600">Upgrade your home with <a href="https://omwavehome.com/" class="text-sky-600 hover:underline"><b>smart lighting installation</b></a> for effortless control of brightness, ambiance, and energy efficiency. Perfect for modern, automated living spaces.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition text-center">
+            <h3 class="text-xl font-bold mb-2">Motorized Blinds And Shades
+
+</h3>
+            <p class="text-slate-600">Enjoy convenience and style with <a href="https://www.google.com/maps?cid=1397293120222179388" class="text-sky-600 hover:underline"><b>motorized blinds and shades</b></a>. Easily control natural light and privacy with the touch of a button or smart home system.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition text-center">
+            <h3 class="text-xl font-bold mb-2">Crestron Automated Window Shades
+
+</h3>
+            <p class="text-slate-600">Experience ultimate comfort with <a href="https://www.google.com/maps?cid=1397293120222179388" class="text-sky-600 hover:underline"><b>Crestron automated window shades</b></a>. Seamlessly integrate natural light control into your smart home for convenience and energy efficiency.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition text-center">
+            <h3 class="text-xl font-bold mb-2">Smart Lighting Installation</h3>
+            <p class="text-slate-600">Transform your home’s lighting with professional <a href="https://www.google.com/maps?cid=1397293120222179388" class="text-sky-600 hover:underline"><b>smart lighting installation</b></a>. Control every room’s ambiance and energy usage with ease.</p>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 brand">Why Choose Crestron & Lutron Home Automation And Shades? </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-slate-50 rounded-2xl p-6 shadow">
+            <h4 class="font-bold text-lg mb-2">Expertise in Motorized Blinds and Shades
+</h4>
+            <p class="text-slate-600">We specialize in high-quality motorized blinds and shades, ensuring every product is precisely measured, professionally installed, and seamlessly integrated with your home automation system.</p>
+          </div>
+          <div class="bg-slate-50 rounded-2xl p-6 shadow">
+            <h4 class="font-bold text-lg mb-2">Trusted Crestron and Lutron Dealer
+</h4>
+            <p class="text-slate-600">As a certified <a href="https://omwavehome.com/" class="text-sky-600 hover:underline"><b>Crestron dealer and Lutron shades installer</b></a>, we provide reliable smart home solutions, including automated window treatments and smart lighting, tailored to your home’s unique needs.</p>
+          </div>
+          <div class="bg-slate-50 rounded-2xl p-6 shadow">
+            <h4 class="font-bold text-lg mb-2">Custom Solutions for Every Home
+</h4>
+            <p class="text-slate-600">From custom window treatments to fully automated systems, we create personalized solutions that combine style, convenience, and energy efficiency, enhancing both comfort and aesthetics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 md:py-24 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 brand">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <!-- Item -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <button class="w-full flex justify-between items-center px-6 py-4 text-left text-lg font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none faq-toggle">
+              <span>Are motorized shades worth the extra cost compared to traditional blinds?
+</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content px-6 pb-4 hidden text-slate-600">Yes — motorized shades improve daily convenience, especially for large or hard‑to‑reach windows. They also integrate with smart home systems, can be scheduled, and help optimize energy efficiency by adjusting automatically with sunlight and time of day.</div>
+          </div>
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <button class="w-full flex justify-between items-center px-6 py-4 text-left text-lg font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none faq-toggle">
+              <span>How do energy‑efficient shades or blinds actually help reduce energy bills?
+</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content px-6 pb-4 hidden text-slate-600">Energy‑efficient window coverings — especially insulated or cellular shades — trap air and create a barrier that reduces unwanted heat gain in summer and heat loss in winter. Studies show they can significantly lower HVAC usage and improve thermal comfort.</div>
+          </div>
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <button class="w-full flex justify-between items-center px-6 py-4 text-left text-lg font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none faq-toggle">
+              <span>Can I install motorized shades and smart window coverings in an existing home?
+</span>
+              <svg class="w-6 h-6 transform transition-transform duration-300 brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-content px-6 pb-4 hidden text-slate-600">Absolutely. Our team at Crestron & Lutron Home Automation And Shades specializes in retrofit installations. Whether you have standard windows, large glass walls, or custom architectural features, we can design, measure, and install motorized blinds or automated shades that integrate with your existing smart‑home system.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Map -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 brand">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <p class="text-lg text-slate-700 mb-4"><strong>Business Name:</strong> Crestron & Lutron Home Automation And Shades
+</p>
+            <ul class="text-slate-700 text-lg space-y-2 mb-6">
+              <li><strong>Address:</strong> 14141 Luray Rd, Southwest Ranches, FL 33330, United States</li>
+              <li><strong>Phone:</strong> <a href="tel:+1 754-209-1354" class="text-sky-600 hover:underline">+1 754-209-1354</a></li>
+              <li><strong>Website:</strong> <a href="https://omwavehome.com/" class="text-sky-600 hover:underline" target="_blank" rel="noopener">https://omwavehome.com/</a></li>
+              <li><strong>Hours:</strong> Monday to Saturday 8:00am–8:00pm Sunday-Closed</li>
+            </ul>
+            <div class="flex items-center gap-3">
+            </div>
+          </div>
+          <div>
+            <div class="rounded-2xl shadow overflow-hidden">
+              <!-- Provided Google Map iframe -->
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.922645143681!2d-80.336662!3d26.0373305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a70f5cc66503%3A0x13642eb08df0b03c!2sCrestron%20%26%20Lutron%20Home%20Automation%20And%20Shades!5e1!3m2!1sen!2s!4v1764139463962!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Searches / Keywords -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-2xl font-bold text-center mb-6 brand">Related Searches</h3>
+        <ul class="flex flex-wrap justify-center gap-2 text-slate-700">
+          <li class="px-3 py-1 rounded-full bg-white shadow">Window Treatment Store</li>
+          <li class="px-3 py-1 rounded-full bg-white shadow">Custom Window Treatments</li>
+          <li class="px-3 py-1 rounded-full bg-white shadow">Motorized Shades Store</li>
+          <li class="px-3 py-1 rounded-full bg-white shadow">Smart Window Coverings</li>
+          <li class="px-3 py-1 rounded-full bg-white shadow">Lutron Shades Dealer</li>
+          <li class="px-3 py-1 rounded-full bg-white shadow">Motorized Blinds And Shades</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+      <p>&copy; <span id="year"></span> Crestron & Lutron Home Automation And Shades</p>
+    </div>
+  </footer>
+
+  <!-- FAQ Script & Mobile Menu -->
+  <script>
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('svg');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
